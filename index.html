@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google Clone</title>
+		<!-- Favicon -->
+		<link rel="icon" href="favicon.jpg" type="image/gif" sizes="16x16" />
+		<!-- favicon ends -->
+
+		<!-- Google Font Roboto -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Google Font ends-->
+
+		<!-- Font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<!-- Font Awesome CDN ends-->
+
+		<!-- bootstrap CDN -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+			crossorigin="anonymous"
+		/>
+		<style>
+			* {
+				font-family: "Roboto", sans-serif;
+				text-decoration: none;
+				margin: 0;
+				padding: 0;
+			}
+			img {
+				margin-left: 504px;
+				margin-top: 62px;
+			}
+			.top-menu {
+				list-style-type: none;
+				float: right;
+				font-size: 13px;
+				margin-top: 10px;
+				margin-right: 4px;
+			}
+			.top-menu li {
+				display: inline;
+				padding: 0px 10px;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+			button {
+				padding: 8px 27px;
+				background-color: #1a73e8;
+				border: 0px solid black;
+				color: white;
+				border-radius: 4px;
+				font-size: 14px;
+				cursor: pointer;
+				margin-right: 5px;
+				margin-top: 3px;
+			}
+			.dotdiv {
+				width: 39px;
+				height: 39px;
+				border: 0px solid red;
+				border-radius: 50%;
+				/* display: none; */
+				position: absolute;
+				top: 12px;
+				right: 124px;
+			}
+			.dotdiv:hover {
+				background-color: #d1dbe6;
+				opacity: 0.3;
+			}
+			.images {
+				margin-right: 6px;
+			}
+			.text {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				margin-top: 20px;
+				border: 1px solid red;
+				width: 590px;
+				height: 43px;
+				border: 1px solid rgb(189, 187, 187);
+				border-radius: 20px;
+			}
+			#textfield {
+				font-size: 15px;
+				border: 1px;
+				margin-left: -220px;
+				margin-top: 7px;
+				outline: none;
+				background: white url(icon.png) left no-repeat;
+			}
+			.text1 {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			.text1 .btn {
+				background-color: #f8f9fa; /* Green */
+				border-radius: 5px;
+				border: none;
+				color: rgb(92, 91, 91);
+				padding: 12px 18px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 15px;
+				margin: 4px 2px;
+				margin-top: 30px;
+				cursor: pointer;
+
+				/* background-color: #f8f9fa; */
+			}
+			.div2 {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				margin-top: 20px;
+			}
+			.listlink {
+				list-style: none;
+			}
+			.listlink li {
+				display: inline;
+				padding: 0 3px;
+			}
+			.listlink li a {
+				color: rgb(10, 32, 226);
+			}
+			.bottomdiv {
+				height: 20px;
+				border: 0px solid red;
+				height: 50px;
+				margin-top: 135px;
+				width: 100%;
+				background-color: #f2f2f2;
+				border-bottom: 1px solid rgb(199, 198, 198);
+				padding-top: 13px;
+			}
+			.bottomdiv2 {
+				/* height: 20px; */
+				border: 0px solid red;
+				height: 50px;
+				background-color: #f2f2f2;
+				position: relative;
+				/* margin-top: 100px; */
+				margin-top: -10px;
+				width: 100%;
+				clear: both;
+			}
+			.india {
+				/* margin-top: 30px; */
+				font-size: 16px;
+				color: #636262;
+				margin-left: 35px;
+			}
+			.btmlist {
+				list-style: none;
+				/* padding-left: -40px; */
+				width: 600px;
+				margin-left: 20px;
+			}
+			.btmlist li {
+				margin-top: 18px;
+				color: #636262;
+				float: left;
+				display: inline;
+				/* border: 1px solid red; */
+			}
+			.btmlist2 {
+				list-style: none;
+			}
+			.btmlist2 li {
+				float: right;
+				display: inline;
+				margin-left: 19px;
+				color: #636262;
+				margin-top: 18px;
+			}
+			.btmlist li {
+				float: left;
+				display: inline;
+				margin-left: 19px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="top-menu">
+			<li><a href="">Gmail</a></li>
+			<li><a href="" class="images">Images</a></li>
+			<li>
+				<div class="dotdiv"></div>
+				<a href="" data-toggle="tooltip" title="Hooray!"
+					><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i
+					><i class="fas fa-ellipsis-v"></i
+				></a>
+			</li>
+			<li>
+				<a href=""><button>Sign in</button></a>
+			</li>
+		</ul>
+		<img src="goog.jpg" alt="" />
+		<div class="text">
+			<input
+				id="textfield"
+				type="text"
+				name="text"
+				size="35"
+				autofocus="autofocus"
+			/>
+		</div>
+		<div class="text1">
+			<button class="btn">Google Search</button>
+			<button class="btn">I'm Feeling Lucky</button>
+		</div>
+		<div class="div2">
+			<ul class="listlink">
+				<li>Google offered in:</li>
+				<li><a href="">हिन्दी</a></li>
+				<li><a href="">বাংলা</a></li>
+				<li><a href="">తెలుగు</a></li>
+				<li><a href="">मराठी</a></li>
+				<li><a href="">தமிழ்</a></li>
+				<li><a href="">ગુજરાતી</a></li>
+				<li><a href="">ಕನ್ನಡ</a></li>
+				<li><a href="">മലയാളം</a></li>
+				<li><a href="">ਪੰਜਾਬੀ</a></li>
+			</ul>
+		</div>
+		<div class="bottomdiv">
+			<p class="india">India</p>
+		</div>
+		<div class="bottomdiv2">
+			<ul class="btmlist">
+				<li>About</li>
+				<li>Advertising</li>
+				<li>Business</li>
+				<li>How Search works</li>
+			</ul>
+			<ul class="btmlist2">
+				<li>Privacy</li>
+				<li>Terms</li>
+				<li>Settings</li>
+			</ul>
+		</div>
+	</body>
+</html>
